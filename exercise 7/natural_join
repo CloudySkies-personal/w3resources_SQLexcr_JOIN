@@ -1,0 +1,9 @@
+SELECT 
+ DISTINCT *
+FROM
+ customer
+NATURAL JOIN
+ orders
+NATURAL JOIN
+ salesman
+;
