@@ -1,0 +1,11 @@
+SELECT 
+  c.cust_name AS "Customer Name",
+  c.city,
+  s.name AS "Salesman",
+  s.commission
+FROM 
+  customer AS c
+INNER JOIN
+  salesman as s
+USING
+  (salesman_id);
