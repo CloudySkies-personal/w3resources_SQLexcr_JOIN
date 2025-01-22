@@ -1,0 +1,12 @@
+SELECT 
+  c.cust_name AS "Customer Name",
+  c.city AS "customer city",
+  s.name AS "Salesman",
+  s.city AS "Salesman City",
+  s.commission
+FROM 
+  customer AS c, salesman as s
+WHERE
+  s.commission > 0.12 AND
+  c.salesman_id = s.salesman_id AND
+  s.city!=c.city;
