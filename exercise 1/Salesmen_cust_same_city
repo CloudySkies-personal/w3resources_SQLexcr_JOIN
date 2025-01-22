@@ -1,0 +1,10 @@
+SELECT 
+  s.name AS Salesman,
+  c.cust_name,
+  c.city
+FROM 
+  salesman AS s
+INNER JOIN 
+  customer AS c
+ON 
+  s.city = c.city;
