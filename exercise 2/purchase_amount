@@ -1,0 +1,11 @@
+SELECT 
+  o.ord_no,
+  o.purch_amt,
+  c.cust_name,
+  c.city
+FROM 
+  customer AS c,
+  orders AS o
+WHERE
+  o.purch_amt BETWEEN 500 AND 2000
+  AND c.customer_id = o.customer_id;
